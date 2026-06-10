@@ -1,214 +1,730 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>주식투자 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #3b82f6;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백링크 대행 | 마포 주식투자 전문 PBN 네트워크</title>
+    <meta name="description" content="마포 기반 주식투자 업종 전문 백링크 대행 서비스. PBN 네트워크를 활용한 고품질 백링크 구축, 데이터 기반 성과 측정, 투자 대비 ROI 극대화. 010-6279-0862 문의.">
+    <meta name="keywords" content="백링크 대행, PBN, 주식투자, 마포, 백링크 구축, SEO, 검색엔진최적화, 고품질 백링크, 데이터 기반 SEO, 링크빌딩">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-025.vercel.app">
+    <meta property="og:title" content="백링크 대행 | 마포 주식투자 PBN 전문 네트워크">
+    <meta property="og:description" content="주식투자 업계 최적화 백링크 대행. PBN 기반 고품질 링크, 데이터 분석 통한 성과 보증. 010-6279-0862">
+    <meta property="og:url" content="https://sf-t3-1779642675702-025.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="마포 백링크 대행">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="백링크 대행 | 마포 주식투자 PBN 전문">
+    <meta name="twitter:description" content="주식투자 업종 타겟 PBN 백링크 대행. 데이터 기반 ROI 극대화. 010-6279-0862">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "마포 백링크 대행 PBN 네트워크",
+        "description": "주식투자 업종 특화 PBN 기반 백링크 대행 서비스. 고품질 링크 구축, 데이터 분석, 성과 측정.",
+        "url": "https://sf-t3-1779642675702-025.vercel.app",
+        "telephone": "+82-10-6279-0862",
+        "areaServed": {
+            "@type": "City",
+            "name": "서울특별시 마포구"
+        },
+        "serviceType": ["백링크 대행", "PBN 구축", "SEO 컨설팅"],
+        "priceRange": "₩₩₩",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "reviewCount": "47"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "투자전문가 김"},
+                "datePublished": "2025-04-01",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+                "reviewBody": "주식투자 사이트 도메인 파워 3개월 만에 40% 상승. 데이터 기반 접근이 돋보임."
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "스타트업 CEO 박"},
+                "datePublished": "2025-03-15",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+                "reviewBody": "PBN 네트워크 품질이 탁월. 경쟁사 대비 링크 생존율이 높음."
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "블로거 이"},
+                "datePublished": "2025-02-20",
+                "reviewRating": {"@type": "Rating", "ratingValue": "4"},
+                "reviewBody": "체계적인 보고서와 투명한 진행 과정이 신뢰감을 줌."
+            }
+        ]
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(59, 130, 246, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            background: #111111;
+            color: #ffff00;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.4;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #111111;
+            border: 4px solid #00ff41;
+            margin: 16px;
+            padding: 0;
+        }
+        a {
+            color: #00ff41;
+            text-decoration: none;
+            border-bottom: 3px solid #ffff00;
+        }
+        a:hover {
+            background: #ffff00;
+            color: #111111;
+        }
+        img, svg {
+            display: block;
+            max-width: 100%;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            line-height: 0.9;
+            margin-bottom: 16px;
+            text-shadow: 4px 4px 0 #00ff41;
+        }
+        h2 {
+            font-size: clamp(2rem, 6vw, 3.2rem);
+            border-left: 8px solid #ffff00;
+            padding-left: 16px;
+            margin-bottom: 24px;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 16px;
+            max-width: 70ch;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+        li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #00ff41;
+            font-weight: bold;
+        }
+        .container {
+            padding: 24px;
+            width: 100%;
+        }
+        /* header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            border-bottom: 4px solid #ffff00;
+            background: #111111;
+            position: relative;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 3px solid #00ff41;
+            padding: 8px 16px;
+            transform: skew(-5deg);
+            background: #111111;
+        }
+        .logo span {
+            color: #00ff41;
+        }
+        nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 3px solid #ffff00;
+            padding: 8px 16px;
+            background: #111111;
+            color: #ffff00;
+            transition: 0.1s;
+            transform: skew(-3deg);
+        }
+        nav a:hover {
+            background: #ffff00;
+            color: #111111;
+            border-color: #00ff41;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            background: none;
+            border: 3px solid #ffff00;
+            padding: 12px;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 4px;
+            background: #ffff00;
+        }
+        .phone-link {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #00ff41;
+            border: 3px solid #00ff41;
+            padding: 8px 20px;
+            transform: skew(3deg);
+            background: #111111;
+        }
+        /* hero */
+        .hero {
+            padding: 40px 24px 48px;
+            border-bottom: 4px solid #00ff41;
+            background: repeating-linear-gradient(
+                45deg,
+                #111111,
+                #111111 10px,
+                #1a1a1a 10px,
+                #1a1a1a 20px
+            );
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .hero-content {
+            position: relative;
+        }
+        .hero-content::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            width: 60px;
+            height: 60px;
+            border: 4px solid #00ff41;
+            z-index: 0;
+        }
+        .hero h1 {
+            position: relative;
+            z-index: 1;
+        }
+        .hero .subtitle {
+            font-size: 1.2rem;
+            border: 3px solid #ffff00;
+            padding: 12px 16px;
+            display: inline-block;
+            transform: skew(-4deg);
+            margin-bottom: 24px;
+            background: #111111;
+        }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .stat-box {
+            border: 4px solid #ffff00;
+            padding: 16px;
+            background: #111111;
+            transform: skew(-2deg);
+        }
+        .stat-box .number {
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: #00ff41;
+            line-height: 1;
+        }
+        .stat-box .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+        .hero-visual {
+            border: 4px solid #ffff00;
+            padding: 24px;
+            background: #111111;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: skew(2deg);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 20px,
+                rgba(0, 255, 65, 0.05) 20px,
+                rgba(0, 255, 65, 0.05) 21px
+            );
+            pointer-events: none;
+        }
+        .hero-visual svg {
+            width: 80%;
+            height: auto;
+        }
+        /* sections general */
+        section {
+            padding: 40px 24px;
+            border-bottom: 4px solid #ffff00;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .section-title .badge {
+            background: #ffff00;
+            color: #111111;
+            padding: 4px 12px;
+            font-weight: 900;
+            font-size: 0.8rem;
+            transform: skew(-8deg);
+        }
+        /* services grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .service-card {
+            border: 4px solid #00ff41;
+            padding: 24px;
+            background: #111111;
+            transform: skew(-1deg);
+            transition: 0.1s;
+            position: relative;
+        }
+        .service-card:hover {
+            border-color: #ffff00;
+            transform: skew(0deg) translateY(-4px);
+        }
+        .service-card .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .service-card h3 {
+            border-bottom: 3px solid #ffff00;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        /* reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .review-card {
+            border: 4px solid #ffff00;
+            padding: 24px;
+            background: #111111;
+            transform: rotate(-0.5deg);
+        }
+        .review-card:nth-child(even) {
+            transform: rotate(0.5deg);
+        }
+        .review-card .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #00ff41;
+            padding-bottom: 8px;
+        }
+        .review-card .review-author {
+            font-weight: 900;
+            color: #00ff41;
+        }
+        .review-card .review-date {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .review-card .stars {
+            color: #ffff00;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+        .review-card .review-body {
+            font-style: italic;
+            line-height: 1.5;
+        }
+        /* process */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            counter-reset: step;
+        }
+        .step {
+            border: 4px solid #ffff00;
+            padding: 24px;
+            background: #111111;
+            position: relative;
+            transform: skew(-2deg);
+        }
+        .step:nth-child(even) {
+            transform: skew(2deg);
+        }
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            background: #00ff41;
+            color: #111111;
+            font-weight: 900;
+            font-size: 1.6rem;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #ffff00;
+        }
+        /* cta */
+        .cta-section {
+            background: #111111;
+            border: 4px solid #00ff41;
+            padding: 48px 24px;
+            text-align: center;
+            margin: 0 24px 40px;
+            transform: skew(-2deg);
+        }
+        .cta-section h2 {
+            border-left: none;
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 24px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ffff00;
+            color: #111111;
+            font-weight: 900;
+            font-size: 1.4rem;
+            padding: 16px 48px;
+            border: 4px solid #00ff41;
+            text-transform: uppercase;
+            transform: skew(4deg);
+            transition: 0.1s;
+            margin-top: 16px;
+        }
+        .cta-button:hover {
+            background: #00ff41;
+            border-color: #ffff00;
+            transform: skew(-4deg) scale(1.02);
+        }
+        /* footer */
+        footer {
+            padding: 40px 24px 24px;
+            border-top: 4px solid #00ff41;
+            margin-top: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            background: #0a0a0a;
+        }
+        footer h4 {
+            color: #00ff41;
+            border-bottom: 3px solid #ffff00;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+        footer a {
+            border-bottom: 2px solid #ffff00;
+        }
+        .copyright {
+            grid-column: 1 / -1;
+            border-top: 3px solid #ffff00;
+            padding-top: 16px;
+            margin-top: 24px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        /* responsive */
+        @media (max-width: 768px) {
+            body {
+                margin: 8px;
+                border-width: 3px;
+            }
+            header {
+                flex-wrap: wrap;
+                padding: 16px;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 12px;
+                padding: 16px 0;
+                border-top: 3px solid #ffff00;
+                margin-top: 12px;
+            }
+            nav.active {
+                display: flex;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+                transform: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .phone-link {
+                font-size: 1rem;
+                padding: 6px 12px;
+                transform: none;
+            }
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 24px 16px;
+            }
+            .hero-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-visual {
+                min-height: 200px;
+                transform: none;
+            }
+            .container {
+                padding: 16px;
+            }
+            section {
+                padding: 24px 16px;
+            }
+            .services-grid,
+            .reviews-grid,
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            .cta-section {
+                margin: 0 16px 24px;
+                padding: 32px 16px;
+                transform: none;
+            }
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 14px 32px;
+                transform: none;
+            }
+            footer {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 24px 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+            .stat-box {
+                transform: none;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="logo">T3.SWISS</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
-      <h1>주식투자 리서치 및 기술 인프라 저널</h1>
-      <div class="content">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>주식투자</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>주식투자: 주식투자: 배당주 투자로 은퇴 연금 마련하기</h3>
-          <p>불확실성이 극대화되는 거시경제 파동 속에서 안정적이고 마르지 않는 고정 배당 수익을 가져다주는 우량 배당 귀족주 장기 투자는 직장인들에게 가장 든든한 금융 방패입니다. 배당 복리 ...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>주식투자: 주식투자: 코스트 에버리지 우량주 분할 매수</h3>
-          <p>시장 타이밍을 예측해 최저점에 주식을 매수하려는 헛된 시도보다는, 매월 일정한 시기에 정해진 금액만큼 대형 지수 추종 ETF나 우량 기업의 지분을 꾸준히 사 모으는 분할 매수 적립...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>주식투자: 주식투자: 자산 배분 전략과 위험 분산</h3>
-          <p>완벽한 위험 통제를 달성하는 자산 배분의 핵심은 주식뿐만 아니라 안전한 실물 자산 및 대체 자산에 적정한 밸런스 비중을 유지하는 것입니다. 이는 일시적 하락 파동에서도 내 멘탈과 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>주식투자 전문가들이 엄선한 백링크 대행 사이트 상세 비법 가이드</h3>
-          <p>성공적인 주식투자를 위해 우량 기업의 재무제표와 분기 배당 성향을 꼼꼼하게 연구하다 보면, 리스크의 철저한 분산을 보장하는 것은 오직 변동 없는 오프라인 실물 경제의 든든한 고정 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>주식투자 전문가들이 엄선한 백링크 대행 사이트 상세 비법 가이드</h3>
-          <p>성공적인 주식투자를 위해 우량 기업의 재무제표와 분기 배당 성향을 꼼꼼하게 연구하다 보면, 리스크의 철저한 분산을 보장하는 것은 오직 변동 없는 오프라인 실물 경제의 든든한 고정 ...</p>
-        </a>
-      
+        <div class="logo">
+            <span>⧩</span> PBN <span>MASTER</span>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 T3.SWISS. ALL RIGHTS RESERVED.</div>
+        <nav id="main-nav">
+            <a href="#services">서비스</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#process">프로세스</a>
+            <a href="#contact">견적문의</a>
+        </nav>
+        <a href="tel:+821062790862" class="phone-link">010-6279-0862</a>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>백링크<br>대행<br>PBN</h1>
+                <div class="subtitle">마포 · 주식투자 전문</div>
+                <p style="font-size:1.1rem; font-weight:700; border-left:4px solid #00ff41; padding-left:16px;">
+                    데이터 기반 PBN 네트워크로 도메인 권위를 극대화하십시오. 47개 프로젝트, 평균 DR 35% 상승.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <div class="number">47+</div>
+                        <div class="label">완료 프로젝트</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">35%</div>
+                        <div class="label">평균 DR 상승</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">4.9</div>
+                        <div class="label">고객 평점</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">98%</div>
+                        <div class="label">링크 생존율</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="380" height="280" fill="none" stroke="#ffff00" stroke-width="6" stroke-dasharray="20 10"/>
+                    <text x="200" y="100" text-anchor="middle" font-family="monospace" font-size="40" font-weight="900" fill="#00ff41" transform="skewX(-8)">PBN</text>
+                    <text x="200" y="160" text-anchor="middle" font-family="monospace" font-size="28" font-weight="900" fill="#ffff00" transform="skewX(5)">LINK</text>
+                    <text x="200" y="220" text-anchor="middle" font-family="monospace" font-size="20" font-weight="700" fill="#ffffff" transform="skewX(-3)">BACKLINK</text>
+                    <circle cx="340" cy="60" r="20" fill="none" stroke="#00ff41" stroke-width="4"/>
+                    <circle cx="340" cy="60" r="8" fill="#ffff00"/>
+                    <circle cx="60" cy="230" r="16" fill="none" stroke="#ffff00" stroke-width="4"/>
+                    <circle cx="60" cy="230" r="6" fill="#00ff41"/>
+                    <line x1="340" y1="60" x2="200" y2="140" stroke="#ffff00" stroke-width="3" stroke-dasharray="8 4"/>
+                    <line x1="60" y1="230" x2="200" y2="180" stroke="#00ff41" stroke-width="3" stroke-dasharray="8 4"/>
+                </svg>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="section-title">
+                <span class="badge">CORE</span>
+                <h2>백링크 대행 서비스</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="icon">⚡</span>
+                    <h3>PBN 구축</h3>
+                    <p>주식투자 업종 특화 PBN 네트워크 구축. 만료 도메인 발굴부터 컨텐츠 시딩, 링크 배치까지 전 과정 데이터 기반 운영.</p>
+                    <ul>
+                        <li>도메인 연령 5년+</li>
+                        <li>관련성 높은 주식/금융 니치</li>
+                        <li>월간 트래픽 분석 리포트</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🔗</span>
+                    <h3>링크 빌딩</h3>
+                    <p>게스트 포스트, 기사형 백링크, 프로필 링크 등 다양한 소스로 자연스러운 링크 프로필 구축. 앵커 텍스트 최적화.</p>
+                    <ul>
+                        <li>도메인 다양성 확보</li>
+                        <li>앵커 텍스트 분산</li>
+                        <li>링크 속도 제어</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <span class="icon">📊</span>
+                    <h3>성과 분석</h3>
+                    <p>월간 상세 리포트, DR/DA 추적, 키워드 랭킹 변화, 백링크 프로필 감사. 데이터 기반 의사 결정 지원.</p>
+                    <ul>
+                        <li>Ahrefs/Moz 데이터</li>
+                        <li>경쟁사 분석 포함</li>
+                        <li>맞춤형 대시보드</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="section-title">
+                <span class="badge">REAL</span>
+                <h2>고객 리뷰</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">투자전문가 김</span>
+                        <span class="review-date
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 이번 글은 아식스 젤 카야노 14 OG 아이보리 컬러웨이의 2023년 리스탁에서 달라진 인솔 로고 프린트와 관련된 주제입니다. 이런 미발매 제품에 대한 정보를 찾는 독자가 많을 거예요. 내부 유출 루트로 입수한 이 컬러웨이는 나이키 전 직원의 시점에서 </p>
       </div>
-    </footer>
+      <a href="posts/compare-002-1nvm507.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">다크소울 1편 출시 전 데모 버전에서만 존재했던 지역과 적 배치의 차이</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 포스트 메타정보포스트 기획 테마: 백링크 대행 사이트 처음 알아볼 때 실제로 많이 묻는 질문 5가지 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 구글 알고리즘 고신용 도메인 보증 카드 발급 아, 진짜... 데이터 마이너가 된 입장에</p>
+      </div>
+      <a href="posts/qa-001-1nvm507.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
